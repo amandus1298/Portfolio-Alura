@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    --cor-bg-primary:#F0ECE5 ;
+    --cor-bg-secondary:#B6BBC4; 
+    --cor-text:#161A30;
+    --cor-hover:#31304D;
+
+    --font-primary: "Krona One", sans-serif;
+    --font-secondary:"Montserrat", sans-serif;
+}
+
+body{
+    background-color:var(--cor-bg-secondary);
+    color: var(--cor-text); 
+}
+
+.header_navbar_links{
+    color: var(--cor-bg-primary);
+    font-family: var(--font-secondary);
+    font-weight:600;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+.header{
+    padding: 2% 0 0 16%;
+}
+.header_navbar{
+    display: flex;
+    gap:80px;
+}
+strong{ 
+    color:var(--cor-bg-primary);
+}
+.container{
+    padding:5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.container_section{
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+    gap:40px;
+    margin:20px;
+}
+.title{ 
+    font-family: var(--font-primary);
+    font-size: 1.6em;
+}
+.description{
+    font-family: var(--font-secondary);
+    font-size:1.5em;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:32px;
+}
+.btnClass{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row-reverse;
+    gap:16px;
+
+    /* background-color:red; */
+    border:2px solid var(--cor-bg-primary);
+    color:var(--cor-text);
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size:1.4rem;
+    font-weight: 300;
+    padding: 21.5px 0;
+    text-decoration: none;
+    
+    font-family: var(--font-secondary);
+    cursor: pointer;
+}
+.btnClass:hover{
+    background-color: var(--cor-hover);
+    border-color:var(--cor-text);
+}
+
+.subtitle{
+    font-family: var(--font-primary);
+    font-weight:400;
+    font-size: 1.5em;
+}
+
+.footer{
+    color: var(--cor-text);
+    background-color:var(--cor-bg-primary);
+    text-align:center;
+    font-size:1.5rem;
+    font-family:var(--font-secondary);
+    padding:24px;
+}
+
+.imagem{
+    border-radius: 8px;
+}
+@media screen and (max-width: 1200px){
+    .header{
+        padding: 11%;
+    }
+    .header_navbar{
+       justify-content: center;
+    }
+    .container{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .container_section{
+        width: auto;
+    }
+    .btnClass{
+        width: 100%;
+    }
+    
+}
